@@ -1,0 +1,15 @@
+name: FIRST_ACTION
+
+# workflow_dispatch means that our workflow will be turn on manually
+on: workflow_dispatch
+jobs:
+  # The name of job is not reserved, but the rest of the names are reserved
+  first_job:
+    # below should be RUNNER
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print greeting
+        run: echo "Hello world!"
+      - name: Print goodbye
+        run: echo "Done - bye!"
+    
